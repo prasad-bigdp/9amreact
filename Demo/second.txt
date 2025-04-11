@@ -1,0 +1,87 @@
+Javascript Revision:
+==================
+1. difference between var, let and const:
+     var is a function scoped variable and it can be redeclared, reassigned and also it is possible to access var before declaration
+   let and const are block scoped variables and they cannot be redeclared or access before declaration
+   let can reassign but const can't
+
+2.  Arrays (map,filter,forEach)
+   map, filter and forEach all will iterate through the whole array   and pass a callback function. callback function contains two parameters( value and index )
+Difference between forEach and map is forEach cannot return the value and map can return the values
+Difference between map and filter is map will return all values but filtern return values where return condition is true
+
+3. logical and ,logical or and ternary operators
+logical and expects all conditions to be true
+logical OR expects any one condition to be true
+ternary opertor checks the condition and if condition is true it executes first block else second block
+
+4. normal function and arrow functions
+Arrow functions usesmodern syntax with prebuilt return for single statements
+  rest  and spread operator
+   both operator uses three dots to represent but rest is considerd when receiving the values and it combines all values into an array and spread is considerd when giving the values and it separates all the array values into individual elements
+
+5. promises,fetch,async await:
+     promise: promise is an object returned by asynchronous operations(it takes time). every promise will have three states i.e., fulfilled,rejected,pending
+we can resolve a promise using then and catch blocks, if promise is fulfilled , it will go to then block else it will go to catch block
+   promise
+   .then(callback)
+   .catch(callback)
+
+we can even try async await instead then and catch to resolve promises. await is keyword to resolve promise and await keyword should be used async functions only
+ async functiion something(){
+    const x= await promise
+}
+
+fetch("https://dummyjson.com/quotes/random")
+	.then( (res)=>res.json())
+	.then((data)=>console.log(data))
+	.catch((err)=>console.log(err))
+
+async function something()
+{
+    try
+    {
+        const res = await fetch("https://dummyjson.com/quotes/random")
+	const data = await res.json()
+	console.log(data)
+    }
+    catch(err){console.log(err)}
+}
+
+6. template literal: Template literals a way to write dynamic strings without breaking the string
+let a = 20;
+console.log(`The value of a is ${a}`)
+let name = "prasad"
+// Hi,prasad!how are you prasad
+console.log(`Hi,${name}!how are you ${name}`)
+
+
+7. import/export (ES6 modules)
+ we can pass data within multiple js files, we use modules. popular modules are require js, common js etc..,
+but ES6 provides simple module system called ES6 modules
+To export something
+        export {value1,value2...}
+
+To import something , we can use 
+      import {value1,value2...} from 'path'
+
+we can also pass one default value per page and import as default
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

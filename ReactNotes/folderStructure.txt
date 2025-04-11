@@ -1,0 +1,61 @@
+In vscode Terminal ---> new terminal --> command prompt ---> npm create vite@latest
+it creates folder like
+```
+└── 📁secondApp
+    └── 📁public
+        └── vite.svg
+    └── 📁src
+        └── App.css
+        └── App.jsx
+        └── 📁assets
+            └── react.svg
+        └── index.css
+        └── main.jsx
+    └── .gitignore
+    └── eslint.config.js
+    └── index.html
+    └── package-lock.json
+    └── package.json
+    └── README.md
+    └── vite.config.js
+```
+
+vite.config.js  : config files are used for ruleset of vite bundler
+Readme.md: it is the instruction file for refernce or future understanding of code/execution
+package.json : This is the main requirements of application. it contains metadata of App like name,version,scripts,dependencies of the application
+package-lock.json: it is created to represent metadata of package.json
+eslint.config.js : it is used for finding errors with their locations
+.gitignore - it contains list of files and folders which are ignored by git
+public - public is the base folder which canbe accessed any where directly
+node modules: it contains all the packages installed for your application
+index.html - it is the main html in react application
+src -- src contains source files
+index.html is connected with main.jsx. main.jsx renders APP component into div with id 'root' in html
+
+In React, all components follows a structure called JSX(Javascript Extensible). It is the combination of HTML+JS.
+  JSX Rules:
+     1. Attribute should follow camelCase
+     2. JSX should return only one Parent Element. In case of multiple elements needed to be returned, wrap them in a container
+     3. In case of dynamic values of JS in HTML, keep them in braces - {}
+     4. In case HTML in JS, keep them in paranthesis - ()
+     5. Styles can be represnted as objects
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

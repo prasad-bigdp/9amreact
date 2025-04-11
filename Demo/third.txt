@@ -1,0 +1,49 @@
+Installation and Fireact react APP:
+  To install Any library of JS, we use package managers. These package managers are used to install/uninstall/update the packages. npm is the popular package manager. To have npm, you need to download and install "node js"
+  step 1: goto website "https://nodejs.org/en/download"
+  step 2: download according to your OS (windows)
+  step 3: Install by double tap and select "npm package manager" and "yes" .
+  step 4: verify by goind to cmd, and type "node -v". it prints version of node if it is installed else error.
+
+You need to have a code editor, we prefer in this course "vs code"
+for nice folder, install "material icon theme" by pkief in vscode
+for shortcuts, install "Es7 react/redux...." by rodrigovallades
+basic settings:  goto file--> activate autosave
+
+create a folder and open in vscode and 
+open terminal  --> new terminal---> cd foldername
+
+"npm create vite@latest" 
+
+vite is a template generator which will create template code for different JS frameworks/libraries
+After the command, give project name, package name and select react
+        --> cd folderName
+        --> npm install
+        --> npm run dev
+it will run react app in localhost:5173, To change the default code, go to src-->App.jsx and write HTML code between return . 
+
+To build the application, run the command "npm run build"
+it will create a dist folder contains HTML,CSS,JS. Browsers cannot understand React directly so "babel" converts react code to browser understandble JS.
+
+Open "netlify.com" and signup using ''github account"
+After login  -- > Add new site --> Deploy manually --> upload the dist folder
+Go to site configuration --> change site name 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

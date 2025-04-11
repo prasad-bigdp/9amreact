@@ -1,0 +1,97 @@
+Welcome to all for ReactJS
+1. why do you want to learn react?
+         so many Jobs
+facebook released react in 2013 and made it as open source. current industry expects more react developers since vibe coding goes with react
+
+2. course structure:
+       requirements: HTML,CSS,JS
+       Timings : 9.10-15 AM --- 10:45-50 AM
+       topics:
+           i. introduction
+           ii. JS necessary concepts
+          iii. Installation, first react app
+            iv. folder structure
+           v. components
+          vi. props
+          vii. context API
+         viii. state, effect
+         ix. hooks
+          x. routing
+         xi. forms
+         xii. libraries
+       xiii. Redux & Redux toolkit
+  Duration: after demo : 30-40 days
+  projects: 10+ mini projects, 1 major project (OTT/Ecommerce/open source library)
+   
+3.  what is React?
+          React is a JS library which is used to create single page applications and better user interfaces. 
+React is developed by meta in 2010 but it is used internally and got it open sourced in 2013. React uses components to build interfaces
+component is a reusable UI code
+
+   is react and react native are same?
+   no, react is used for web application/web pages
+   react native is used for mobile applications
+
+   which is better react or angular
+   React is developed and maintained by meta. Angular is developed and maintained by Google
+   React follows simple component architecture
+   Angular follows MVC(model view controller) architecture
+   React is a library and Angular is a framework
+
+3. Advantages of React:
+     i.  Efficient : React uses virtual DOM to make code more efficient
+     ii. components :  React follows component based architecture so we can create simple components and reuse them multiple times
+    iii. JSX: react uses simple format called JSX(javascript extensible) to make code easy to write
+   iv. Easyness: React is relatively easy when compared with angular or vue.
+  v. large community: There are lot of developers who uses React so it easy to catch up the queries using the communities.
+
+Tools:
+     1. download install VS code
+     2. download & install  git
+    3. create an account in github
+    4. download & install nodejs
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+
+
+
+
+
+
+
+

@@ -1,0 +1,13 @@
+.movie{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  box-shadow: 5px 10px 15px green;
+}
+.App{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
