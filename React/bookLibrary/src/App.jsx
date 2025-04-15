@@ -206,7 +206,15 @@ function App ()
 			title: "Fahrenheit 451",
 			author: "Ray Bradbury",
 		},
-	]
+  ]
+	function giveMoney (n)
+	{
+		console.log("you gave "+n+" rupees")
+	}
+	function sayHello (name)
+	{
+		console.log(name+" says Hello")
+	}
   return (
 		<div>
 			<Header />
@@ -214,7 +222,7 @@ function App ()
         {
           books.map((v,i) =>
           (
-            <Book imgLink={v.url} title={v.title} author={v.author} />
+			  <Book imgLink={v.url} title={v.title} author={v.author} fun={giveMoney} fun2={sayHello} />
           ))
         }
 			</div>

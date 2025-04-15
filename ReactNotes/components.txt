@@ -10,3 +10,70 @@ eg: function ComponentName(){
     )
 }
 export default ComponentName;
+
+A component inside another component is called nested component. The components which contains another component is called parent component and the component which is inside the other is called child component.
+
+Props: It is short of 'Properties' in react and are used to pass data from parent component to child component. These are immutable values from parent component to child component.
+
+How to pass props?
+   To pass props, you can add attributes  to the component qhen it is used in Parent JSX
+
+   //parent.JSX
+   function Parent()
+   {
+    return (
+        <div>
+           <Child title="RRR" />
+        </div>
+    )
+   }
+
+How to use props?
+   props can be used or received by child component as object of function parameters
+
+   //Child.jsx
+   function Child(props){
+    return (
+        <p>{props.title}</p>
+    )
+   }
+
+   Destructuring props:
+   we can even Destructure the values inside the props object using object destruction
+   //Child.jsx
+   function Child({title}){
+    return (
+        <p>{title}</p>
+    )
+   }
+
+   How to send props from child to parent?
+   In React directly , it is not possible to send data from child to parent because, In React data is always one way data binding.
+   But there is an indirect way. parent can even send functions as props. so , parent component sends functions as props and child passes values to that function
+
+   //Parent.jsx
+   function Parent(){
+    function add(a,b){
+        console.log("the sum is + (a+b))
+    }
+    return (
+        <Child add={add} />
+    )
+   }
+   //Child.jsx
+   function Child(props){
+    return (
+        <button onClick={()=>props.add(2,3)}>click me</button>
+    )
+   }
+
+   state: state defines the value that changes. for eg: one button is in red color , that is one state and if it changes to another color , its state is changed. To manage states react have multiple approaches
+       --> class components can use state object directly , thats why these components also called stateful components
+       --> functional components can use state object using "useState" hook. A hook is a function that starts with "use" and it replaces basic functionalities in react. Before react 16, functional components cannot have state implementation so they used to be called as stateless components
+
+
+ Definition: state is a object that defines/stores the data that changes over the time in a component. Everytime state changes , the component re renders witht the new data
+
+
+
+ 
