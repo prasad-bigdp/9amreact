@@ -1,0 +1,9 @@
+JAVASCRIPT REFRESHENER: map,foreach,filter,promises,async await,modules, functions, object destructuring, rest vs spread
+1. what is React?
+2. difference between react and react native?
+3. what is JSX? how many elements can JSX return ?
+4. what is component? how many types? what are they?
+5. what are props?
+6. can i send data from child to parent components?
+7. what is a state? what happens on every state change?
+8. what is virtual DOM?

@@ -1,0 +1,7 @@
+state:  state is a object that stores the value that changes and on every state value change, the component re render, it uses VIRTUAL DOM for updating only values that changed.
+state update is a asynchronous function
+In functional components, we cannot use state directly , so it is called stateless components but from react 16, we can implement state in functional components using 'useState' hook
+
+useState: it is a default hook from react and it exports a stateValue and a method to update the stateValue
+syntax: 
+   const [value,setValue] = useState(initialValue)
