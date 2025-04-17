@@ -7,3 +7,4 @@ JAVASCRIPT REFRESHENER: map,foreach,filter,promises,async await,modules, functio
 6. can i send data from child to parent components?
 7. what is a state? what happens on every state change?
 8. what is virtual DOM?
+9. what is useState?

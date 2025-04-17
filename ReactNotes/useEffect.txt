@@ -1,0 +1,7 @@
+useEffect: useEffect is a hook used to handle side effects. side effects are changes happened in application asynchronously like setTimeout,setInterval, feching data from server etcc.,
+useEffect will be called and executed automatically on first time a component renders.
+syntax: useEffect(callbackfn, [dependencies])
+useEffect have 3 possible cases:
+   i. no dependencies array: callbackfn will be called on every state changes in an application
+   ii. empty dependencies array : callbackfn will be called only first time component renders
+   iii. array with values : callbackfn will be called only if the values state changes
