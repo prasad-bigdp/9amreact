@@ -1,0 +1,10 @@
+https://randomuser.me/api     --  no need of key
+https://dummyjson.com/docs    -- no need of key
+fakestoreapi.com/products     -- no need of key
+https://omdbapi.com/?apikey=key&s=%22RRR%22  -- needed api key
+tmdb.com    -- need api keys
+nasa api  -- need api key
+openweather -- need api key
+cricket api  -- need api key
+gpts(chatbots)  -  gemini -- need api key
+pokeapi  -- no need of api key
