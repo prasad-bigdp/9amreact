@@ -1,0 +1,64 @@
+We can define components in two ways 
+i.  functional components also called stateless components. it can have state using useState hook from react 16 version.
+ii. class components also called stateful components since they have state object by default
+eg: class MyComponent extends Component
+{
+    render(){
+        return (
+            <h1>Hello world</h1>
+        )
+    }
+}
+
+
+counter in class:
+import { Component } from "react";
+class ClassComp extends Component
+{
+    constructor()
+    {
+        super();
+        this.state = {
+            count:0
+        }
+    }
+    render ()
+    {
+        return (
+            <div>
+                <p>{this.state.count}</p>
+                <button onClick={() => this.setState({ count: this.state.count + 1 })}>+</button>
+                <button onClick={() => this.setState({ count: this.state.count - 1 })}>-</button>
+                <button onClick={() => this.setState({ count: 0 })}>Reset</button>
+            </div>
+        )
+    }
+}
+export default ClassComp
+
+
+In class components, there are some methods which will be called automatically at different stages of its life cycle
+There are 3 stages for a component
+  a. mounting(starting):
+     constructor: it is default method that will be called automatically when component starts
+     getDerivedStateFromProps: called when components props changes
+     render: called to render the component UI
+     componentDidMount: called when component render is completed
+  b. updating(changing state values)
+      getDerivedStateFromProps: called when components props changes
+      shouldComponentUpdate : called before updating state value. it should return true
+       render: called to render the component UI
+       componentDidUpdate: called when components update is completed
+  c. unmounting(kind of components death):
+     componentDidUnMount: called when component unmount is done
+
+     In functional components , these life cycle methods are not available, instead we use different hooks replacing them.
+
+
+
+
+
+
+
+
+
