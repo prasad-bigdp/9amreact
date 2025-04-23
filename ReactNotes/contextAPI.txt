@@ -1,0 +1,8 @@
+Prop Drilling: In React, there is an situation where we have to pass some values to the innermost child, but to pass that values as props, you need to pass them from one component to other component as props. Even though the middle components are not using the values, still they need to pass to reach the innermost child. This probelm is called prop drilling.
+
+We can solve PROP Drilling using Context API
+The context API allows us to share data between components without passing them manually . it provides a way to manage global state, making it easier to access/update data across the application.
+
+   --> context:A context is an object that holds the shared data
+   --> Provider: A Provider is a component that wraps around your app and provides context to components
+   --> Consumer:  A Consumer is a component that uses the context
