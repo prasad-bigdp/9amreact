@@ -10,6 +10,7 @@ lists
 context API
 class Components
 life cycle methods
+routing
 hooks
 forms
   -- controlled Components

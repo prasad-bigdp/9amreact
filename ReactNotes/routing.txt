@@ -1,0 +1,9 @@
+Routing is used to navigate between different pages. React cannot do routing by default, so , we needa a library for routing in react. The standard library for routing in react is "React Router DOM".
+
+step 1 : Goto terminal --> cd specific project --> npm install react-router-dom
+
+React Router DOM contains so many values/functions, To use them , application should be inside BrowserRouter
+
+step 2: goto main.jsx, import BrowserRouter and keep app inside BrowserRouter
+
+step 3 : Go to App.jsx, define Routes and Each Route as follows. Before that create components for different pages
