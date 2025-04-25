@@ -8,6 +8,7 @@ import Services from './pages/Services'
 import Contact from './pages/Contact'
 import NotFound from './pages/NotFound'
 import './App.css'
+import Service from './pages/Service'
 function App() {
   return (
     <>
@@ -18,6 +19,7 @@ function App() {
         <Route path='/about' Component={About} />
         <Route path='/services' element={<Services />} />
         <Route path='/contact' Component={Contact} />
+        <Route path='/service/:id' Component={Service} />
         <Route path='*' Component={NotFound} />
       </Routes>
       <Footer />
