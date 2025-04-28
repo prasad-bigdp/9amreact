@@ -7,3 +7,56 @@ React Router DOM contains so many values/functions, To use them , application sh
 step 2: goto main.jsx, import BrowserRouter and keep app inside BrowserRouter
 
 step 3 : Go to App.jsx, define Routes and Each Route as follows. Before that create components for different pages
+
+   <Routes>
+      <Route path="/path" Component={ComponentName} />
+   </Routes>
+
+step 4: Goto Header, define Link to navigate to specific path(anchor tags will reload the page)
+   <Link to='path'>click here</Link>
+
+Dynamic Routing:
+    For dynamic Routing , we can mention the path as 
+    <Route path='/path/:id' Component={ComponentName} />
+    Here id is variable and to get what is id in URL, we can use hook "useParams"
+    const {id} = useParams();
+
+404 page:
+    For 404/not found page, we can mention path as
+    <Route path='*' Component={ComponentName} />
+
+child routing:
+     React allows routing inside the page different components called child routing.
+     Define routes as children
+     <Route
+					path='/home'
+					Component={Home}
+					children={[
+						<Route
+							path='/home/child1'
+							Component={Child1}></Route>,
+						<Route
+							path='/home/child2'
+							Component={Child2}></Route>,
+					]}
+				/>
+        we need to set Link tag inside home component for navigating to specific paths 
+        To display the child components, we use <outlet> for the place to display
+
+   Lazy Loading: Normally components load every thing at once, but loading all components makes application less performance, so we need to load a component whenever it is necessary, that is called lazy loading
+
+    React provides React.lazy to load components based on current routing
+  const About = React.lazy(() => import("./pages/About"))
+
+  you need to keep routes within suspence and you can assign a fallback,
+  <React.Suspense fallback={<div>loading...............</div>}>
+      <Routes></Routes>
+  </React.suspence>
+   
+   In case to take query results in URL, you can use useSearchParams
+    for eg: https://amazon.com/sale?item="secret"
+          const {item} = useSearchParams()
+
+
+
+

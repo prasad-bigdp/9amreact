@@ -1,0 +1,3 @@
+https://motion.dev/
+https://gsap.com/resources/React/
+
