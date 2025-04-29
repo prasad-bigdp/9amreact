@@ -1,0 +1,8 @@
+React forms can be done in two ways. Based on forms, React components are divided as
+  i. controlled components
+  ii. uncontrolled components
+
+  i. controlled components: In controlled components, form input values are controlled by state. we can save or manipulate the input values using state.
+  we use events such as oninput,onchange,onselect,onclick,onsubmit
+   
+   
