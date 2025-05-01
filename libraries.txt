@@ -1,3 +1,42 @@
+Animations:
+
 https://motion.dev/
 https://gsap.com/resources/React/
+React Three Fiber
+React Spring
 
+Routing:
+  React Router DOM
+  TanStack Router
+
+UI libraries:
+  Material UI
+  chakra UI
+  shadcn UI
+  Ant Design
+
+Data Fetching
+  Axios
+  Tanstack Query
+
+Icons 
+   react lucide Icons
+   react Icons
+   Material Icons
+
+state management
+   Redux
+   MobX
+   Zustad
+
+Forms:
+  Formik + Yup
+  React Hook Form + Zod
+
+CSS
+  React Bootstrap
+  tailwind css
+
+Data Visualization:
+   Recharts
+   chartjs

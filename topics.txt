@@ -11,10 +11,12 @@ context API
 class Components
 life cycle methods
 routing
-hooks
 forms
   -- controlled Components
   -- uncontrolled Components
 libraries
 redux
+hooks
+typescript, next js
+REAL TIME PROJECT
 

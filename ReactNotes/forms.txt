@@ -1,8 +1,68 @@
-React forms can be done in two ways. Based on forms, React components are divided as
-  i. controlled components
-  ii. uncontrolled components
+i. Controlled components
+ii. Uncontrolled components
 
-  i. controlled components: In controlled components, form input values are controlled by state. we can save or manipulate the input values using state.
-  we use events such as oninput,onchange,onselect,onclick,onsubmit
-   
-   
+i. Controlled components:
+In controlled components, form input values are controlled by state. We can save or manipulate the input values using state. We use events such as onInput, onChange, onSelect, onClick, and onSubmit.
+
+Detailed explanations of both controlled and uncontrolled components:
+1. Controlled components:
+   - Form input values are controlled by React state
+   - Any changes to the input values are reflected in the state
+   - Developers have full control over the form inputs and can easily validate and manipulate the data
+   - Requires more code to set up the initial state and handle changes
+
+2. Uncontrolled components:
+   - Form input values are managed by the DOM
+   - React does not have direct control over the input values
+   - Developers can still access the current value using a ref
+   - Requires less code to set up, but can be more difficult to validate and manipulate the data
+
+Practical examples with code:
+// Controlled component
+const ControlledForm = () => {
+  const [name, setName] = useState('');
+
+  const handleNameChange = (event) => {
+    setName(event.target.value);
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log('Submitted name:', name);
+  };
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <label>
+        Name:
+        <input type="text" value={name} onChange={handleNameChange} />
+      </label>
+      <button type="submit">Submit</button>
+    </form>
+  );
+};
+
+// Uncontrolled component
+const UncontrolledForm = () => {
+  const nameInputRef = useRef(null);
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log('Submitted name:', nameInputRef.current.value);
+  };
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <label>
+        Name:
+        <input type="text" ref={nameInputRef} />
+      </label>
+      <button type="submit">Submit</button>
+    </form>
+  );
+};
+
+
+3rd Part libraries: 
+    Formik + Yup
+    React Hook Form + Zod
