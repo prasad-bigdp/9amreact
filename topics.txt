@@ -1,6 +1,6 @@
-JAVASCRIPT REVISION
+JAVASCRIPT REVISION  - modules,promises, async await , timers , OOP, array methods
 React Introduction
-Components
+Components  - class , functional
 nested Components
 props(parent to child and child to parent)
 state(useState)
@@ -11,7 +11,7 @@ context API
 class Components
 life cycle methods
 routing
-forms
+forms 
   -- controlled Components
   -- uncontrolled Components
 libraries

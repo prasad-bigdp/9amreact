@@ -1,0 +1,8 @@
+Git : Git is a distributed version control software. it is developed and maintained by Linux. 
+   download and install git
+   goto cmd propmt, type git -v
+
+   commands:
+   goto folder in terminal and type
+   1. git init  -- it initializes the git
+   2. git add .  -- add all files to git to track
