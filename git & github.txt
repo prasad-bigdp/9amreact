@@ -6,3 +6,10 @@ Git : Git is a distributed version control software. it is developed and maintai
    goto folder in terminal and type
    1. git init  -- it initializes the git
    2. git add .  -- add all files to git to track
+   3. git commit -m "message" -- it will commit the complete code with a message
+
+   mentioning who you are:
+   git config --global user.name "your username"
+   git config --global user.email "your email id"
+
+   again repeat step 2 and 3
