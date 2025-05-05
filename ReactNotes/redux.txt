@@ -10,4 +10,52 @@ Redux Architecture:
 
   Steps to use Redux:
   i. install redux, npm install redux react-redux
-  ii. 
+  ii. create a folder redux and files Action.js,Reducer.js,store.js
+  //Action.js
+  const incr = ()=> {
+    return {type:"Increment",payload:25}
+  }
+  export {incr}
+  // reducer.js
+  const initialState = {count:0}
+  function myReducer(state=initialState,action){
+    switch(action.type){
+      case "Increment": return {count:state.count+action.payload}
+      default: return state;
+          }
+  }
+  export {myReducer}
+  //Store.js
+  import {createStore} from 'redux'
+  import {myReducer} from './reducer.js"
+  export const myStore = createStore(myReducer)
+ iii. provide store as global store in main.jsx
+<Provider store={myStore}>
+   <App />
+</Provider>
+
+iv. use useSelector in App.jsx  to get the data from the store
+
+const count = useSelector((state)=>state.count)
+
+
+v. use useDispatch in App.jsx to dispatch actions to the reducer
+
+const dispatch = useDispatch();
+<button onClick={()=>dispatch(incr())}>click me</button>
+
+
+Redux Toolkit : Redux toolkit simplies actions and reducers by combining them as one part.
+To make less boilerplate or simple state management we use Redux Toolkit
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,32 @@
+hooks :  hooks are used similar to life cycle methods in class Components. hooks are functions that starts with use and used for different purposes
+React provides multiple hooks such as
+  i. useState: it is used to update the state value and re render the Component.
+     const [value,setValue] = useState(initial value)
+
+  ii. useEffect: it is used to deal with the side effects . it runs the function after Component painted. it re reuns the function every time its dependency state is updated. if dependency array is empty , it runs only first time
+      useEffect(callback fn,[dependencies])
+
+  iii. useContext : it is used to take the global context value
+        const {value} = useContext(contextName)
+
+   iv. useRef : it is used to create a ref to manipulate the DOM.
+        const someRef = useRef();
+
+   v. useCallback : useCallback is used to remember / memorise the function such that it will not undergoes re render
+       const memorisedFunction = useCallback(callback,[dependencies])
+         const handleClick = useCallback(() => console.log("hello world"),[])
+     To make child components stop from re rendering when props are same, we use Higher order component React.memo
+   
+   vi. useMemo : useMemo is used to remember/memorise the values/expensive calculations 
+          const memorisedFunction = useMemo(callback,[dependencies])
+
+   vii. useId: it is used to generate unique id's
+     const id = useId()
+
+   viii. useReducer : use Reducer is a smaller version of redux
+    const [state,dispatch] = useReducer(reducer,initial state)
+
+    ix. custom hooks: custom hooks can be created as functions that starts with "use" keyword
+
+
+

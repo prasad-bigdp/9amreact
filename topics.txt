@@ -15,8 +15,11 @@ forms
   -- controlled Components
   -- uncontrolled Components
 libraries
-redux
+redux, redux toolkit
 hooks
+crud operations
+git & github
+firebase
 typescript, next js
 REAL TIME PROJECT
 
