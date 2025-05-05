@@ -13,3 +13,9 @@ Git : Git is a distributed version control software. it is developed and maintai
    git config --global user.email "your email id"
 
    again repeat step 2 and 3
+
+
+   4. git remote add origin "link"  -- it makes a connection betweem local folder/repository to thhe cloud repository.
+
+   5. git push -u origin main/master
+
