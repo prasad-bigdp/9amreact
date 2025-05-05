@@ -19,3 +19,31 @@ Git : Git is a distributed version control software. it is developed and maintai
 
    5. git push -u origin main/master
 
+cloning , forking, branching,merging:
+
+cloning is the copy that you download from a repository
+git clone link
+
+forking is the copy repository created with synchronisation to the main repository.
+
+for open source contribution, follow below steps:
+fork the original repository , it will make your copy repository
+clone your copy repository into VScode
+do the changes
+add to git, commit and push to your copy repository
+create a pull request to the original repository for merging your code
+once it is accepted, your code will be merged and you are a contributor now
+
+branches contains individual code segments which can be merged as per requirements. it helps in managing multiple use cases or environments
+
+create a new branch : git branch branch-name
+goto the branch : git checkout branchname
+
+
+
+
+
+
+
+
+
