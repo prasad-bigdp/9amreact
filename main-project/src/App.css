@@ -1,0 +1,9 @@
+.trilar-display{
+    width: 50vw;
+    height: 50vh;
+    z-index: 500;
+    background: #f50f0f;
+    position: fixed;
+    top: 25vh;
+    left: 25vw;
+  }

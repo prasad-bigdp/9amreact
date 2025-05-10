@@ -1,0 +1,51 @@
+.navBar {
+    height: 4.5rem;
+    position: fixed;
+    transition: all 1s;
+    z-index: 100;
+
+}
+#nonetransp{
+    background: #000;
+
+}
+
+#transp{
+    background: rgb(0, 0, 0);
+    background: -moz-linear-gradient(180deg, rgba(0, 0, 0, 1) 22%, rgba(202, 223, 242, 0) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 1) 22%, rgba(202, 223, 242, 0) 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 22%, rgba(202, 223, 242, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#cadff2", GradientType=1);
+}
+
+.logoImg {
+    width: 5.7rem;
+    
+}
+
+ul li {
+    font-size: 14px;
+    font-weight: 500;
+    list-style-type: none;
+    /* padding: 0 10px 0px 10px; */
+}
+
+.nav-left-items li {
+    padding: 0 10px 0px 10px;
+
+}
+
+.nav-left-items i {
+    font-size: 1.1rem;
+
+
+}
+
+.avatar-icon {
+    width: 2rem;
+    border-radius: 5px;
+}
+.avatar-icon-sub{
+    width: 2.2rem;
+    border-radius: 4px;
+}

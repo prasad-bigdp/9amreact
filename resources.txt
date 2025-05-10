@@ -1,2 +1,4 @@
 https://github.com/emmabostian/developer-portfolios
 https://masri.blog/Blog/Coding/Potfolios/Collection-of-150-awesome-portfolios
+https://play.tailwindcss.com/
+https://riteshdafale.github.io/ReactLibraries
