@@ -12,3 +12,4 @@ https://api.spacexdata.com/v5/launches
 https://iplocate.io/api/lookup
 https://docs.github.com/en/rest?apiVersion=2022-11-28
 https://publicapis.dev/
+https://beeceptor.com/crud-api/

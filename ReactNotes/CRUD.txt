@@ -1,0 +1,13 @@
+CRUD refers to CREATE, READ,UPDATE,DELETE
+frontend will read data from database through the backend using API endpoints, frontend also submit the data to API endpoints.
+READING the data  --- GET request
+SUBMITTING the data --- POST request
+changing/updating the data --- PUT request
+Deleting the data --DELETE request
+GET  --- fetch(url)
+DELETE -- fetch(url/id,{method:'DELETE'})
+POST -- fetch(url,{
+    method:'POST',
+    headers:'Authorization':`Bearer ${token}`
+    body:'JSON.stringify(data)`,
+    })
